@@ -144,9 +144,9 @@ static bool isPlatformEventPending(void)
 {
     bool isPending = efr32AlarmIsReady();
 
-#if defined(SL_CATALOG_IOSTREAM_EUSART_PRESENT) || defined(SL_CATALOG_IOSTREAM_USART_PRESENT)
-    isPending = isPending || efr32UartIsDataReady();
-#endif
+//#if defined(SL_CATALOG_IOSTREAM_EUSART_PRESENT) || defined(SL_CATALOG_IOSTREAM_USART_PRESENT)
+//    isPending = isPending || efr32UartIsDataReady();
+//#endif
 
     return isPending;
 }

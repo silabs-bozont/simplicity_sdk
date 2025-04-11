@@ -20,12 +20,12 @@ include:
     file_list:
       - path: uart.h
 source:
-  - path: protocol/openthread/platform-abstraction/efr32/uartdrv_uart.c
-    condition:
-      - uartdrv_instance
-  - path: protocol/openthread/platform-abstraction/efr32/iostream_uart.c
-    condition:
-      - iostream_uart_common
+#  - path: protocol/openthread/platform-abstraction/efr32/uartdrv_uart.c
+#    condition:
+#      - uartdrv_instance
+#  - path: protocol/openthread/platform-abstraction/efr32/iostream_uart.c
+#    condition:
+#      - iostream_uart_common
 template_contribution:
   - name: component_catalog
     value: openthread_uart
