@@ -48,7 +48,7 @@ requires:
   - name: ot_sbom_tcplp
   - name: cmsis_rtos2
     condition: [device_series_3]
-  - name: ot_uart_implemention
+  #- name: ot_uart_implemention
   - name: radio_priority_15_4
 recommends:
   - id: ot_platform_abstraction_source
@@ -56,7 +56,7 @@ recommends:
     condition: [device_series_3]
   - id: freertos_heap_3
     condition: [device_series_3]
-  - id: ot_uart
+  #- id: ot_uart
 ui_hints:
   visibility: never
 include:
